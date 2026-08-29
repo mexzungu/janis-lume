@@ -54,9 +54,11 @@ Details that matter:
   useful part of the message.
 - **At ≥90%, same message suggests action:** "Consider pausing loops /
   degraded mode will trigger at limit."
-- **Tie-in:** at 95% you could pre-emptively `enter("95% usage")` from the
-  degraded-mode spec instead of waiting for a hard limit error. Pepe's
-  call — ask him once it works.
+- **Tie-in (Pepe confirmed, 2026-08-29):** at 93%, pre-emptively
+  `enter("93% usage")` from the degraded-mode spec — don't wait for the
+  hard limit error. The 93% notification and degraded-mode entry fire
+  together: "Crossed 93% — entering degraded mode (loops paused, Haiku
+  replies). Resets at HH:MM." 
 
 ## Build order
 
